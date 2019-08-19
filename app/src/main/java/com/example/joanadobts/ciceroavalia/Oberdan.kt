@@ -12,6 +12,7 @@ import android.widget.Toast
 import com.example.logintest.DebugActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.oberdan.*
+import java.util.*
 
 class Oberdan : DebugActivity() {
 
@@ -20,6 +21,10 @@ class Oberdan : DebugActivity() {
         setContentView(R.layout.oberdan)
 
         val nomes = arrayOf("LP", "CJD", "PI1", "PAD1", "PAD2")
+        val calendario = Calendar.getInstance()
+        val ano = calendario.get(Calendar.YEAR)
+        val mes = calendario.get(Calendar.MONTH)
+        val dia = calendario.get(Calendar.DAY_OF_MONTH)
 
 
         val adapter = ArrayAdapter( this, android.R.layout.simple_spinner_dropdown_item,
