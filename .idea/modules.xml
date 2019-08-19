@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CiceroAvaliia.iml" filepath="$PROJECT_DIR$/CiceroAvaliia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cicero_Avalia.iml" filepath="$PROJECT_DIR$/Cicero_Avalia.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

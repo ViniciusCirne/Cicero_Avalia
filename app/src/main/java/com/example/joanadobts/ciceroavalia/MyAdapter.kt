@@ -3,6 +3,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import kotlinx.android.synthetic.main.list_activity.view.*
 import kotlinx.android.synthetic.main.list_professores.view.*
 
 class MyAdapter(var lista : MutableList<ProfessoresLista>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>(){
@@ -21,7 +22,6 @@ class MyAdapter(var lista : MutableList<ProfessoresLista>) : RecyclerView.Adapte
 
         holder.nome.text = lista[position].nome
         holder.materia.text = lista[position].materia
-        holder.api.text = lista[position].api
         holder.avatar.setImageResource(lista[position].avatar)
     }
 
@@ -31,6 +31,6 @@ class MyAdapter(var lista : MutableList<ProfessoresLista>) : RecyclerView.Adapte
         var nome = itemView.txtNome
         var materia = itemView.txtMateria
         var avatar = itemView.fotoProf
-        var listaView = itemView.viewLista
+        var listaView = itemView.rvLista
     }
 }
