@@ -9,10 +9,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Firebase" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8eeb9fb-390e-401a-bc48-3ba2d7c9eb6e" name="Default Changelist" comment="Gestao Activity Update">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/Oberdan.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/Oberdan.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/oberdan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/oberdan.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d8eeb9fb-390e-401a-bc48-3ba2d7c9eb6e" name="Default Changelist" comment="Gestao Activity Update" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -344,7 +341,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info id="Image Layers" order="1" />
