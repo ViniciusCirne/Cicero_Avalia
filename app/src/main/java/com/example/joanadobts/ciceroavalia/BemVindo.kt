@@ -19,7 +19,7 @@ class BemVindo : DebugActivity() {
 
         buttonProf.setOnClickListener {
 
-            val nextIntent = Intent(this, Professores::class.java)
+            val nextIntent = Intent(this, ListActivity::class.java)
             startActivity(nextIntent)
         }
 

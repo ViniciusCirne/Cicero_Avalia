@@ -16,7 +16,7 @@ class MainActivity : DebugActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var buttonLogin = findViewById<Button>(R.id.button1)
+        var buttonLogin = findViewById<Button>(R.id.buttonEntrar)
         var tLogin = findViewById<EditText>(R.id.tLog)
         var tPassword = findViewById<EditText>(R.id.tPass)
 

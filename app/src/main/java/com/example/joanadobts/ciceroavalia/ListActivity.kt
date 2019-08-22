@@ -1,9 +1,10 @@
-package com.example.nave.recyclerview3c_t6
+package com.example.joanadobts.ciceroavalia
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import com.example.joanadobts.ciceroavalia.MyAdapter
 import com.example.joanadobts.ciceroavalia.ProfessoresLista
 import com.example.joanadobts.ciceroavalia.R
 import kotlinx.android.synthetic.main.list_activity.*
