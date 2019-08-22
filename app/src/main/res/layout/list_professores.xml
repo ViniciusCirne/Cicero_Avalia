@@ -18,14 +18,14 @@
             android:layout_width="171dp"
             android:layout_height="0dp"
             android:id="@+id/txtNome" app:layout_constraintStart_toEndOf="@+id/fotoProf"
-            app:layout_constraintTop_toTopOf="parent" android:textSize="25" android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" android:textSize="25sp" android:textStyle="bold"
             android:layout_marginTop="24dp" android:layout_marginBottom="15dp"
             app:layout_constraintBottom_toTopOf="@+id/txtMateria" android:layout_marginStart="8dp"/>
     <TextView
             android:text="TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/txtMateria" android:textSize="18"
+            android:id="@+id/txtMateria" android:textSize="18sp"
             app:layout_constraintTop_toBottomOf="@+id/txtNome" app:layout_constraintStart_toEndOf="@+id/fotoProf"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="631dp"
             app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="229dp"
