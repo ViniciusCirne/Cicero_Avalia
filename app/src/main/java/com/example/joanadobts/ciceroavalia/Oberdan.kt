@@ -1,8 +1,12 @@
 package com.example.joanadobts.ciceroavalia
 
+import android.annotation.TargetApi
+import android.app.DatePickerDialog
 import android.content.Intent
+import android.os.Build
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.annotation.RequiresApi
 import android.widget.Button
 import android.widget.EditText
 import android.view.View
@@ -16,6 +20,8 @@ import java.util.*
 
 class Oberdan : DebugActivity() {
 
+    @TargetApi(Build.VERSION_CODES.N)
+    @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.oberdan)
