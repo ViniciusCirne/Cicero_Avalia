@@ -16,10 +16,15 @@ class Cadastro : DebugActivity() {
         setContentView(R.layout.cadastroo)
 
         var buttonSign = findViewById<Button>(R.id.button5)
+        var voltarMenu = findViewById<Button>(R.id.button6)
 
         buttonSign.setOnClickListener {
 
-            val nextIntent = Intent(this, Cadastro::class.java)
+            Toast.makeText(this, "Usuário cadastrado com sucesso", Toast.LENGTH_LONG).show()
+        }
+        voltarMenu.setOnClickListener {
+
+            val nextIntent = Intent(this, MainActivity::class.java)
             startActivity(nextIntent)
         }
 

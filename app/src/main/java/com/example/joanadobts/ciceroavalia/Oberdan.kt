@@ -25,7 +25,7 @@ class Oberdan : DebugActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.oberdan)
-
+        var buttonConcluir = findViewById<Button>(R.id.ratingDone)
         val nomes = arrayOf("LP", "CJD", "PI1", "PAD1", "PAD2")
         val calendario = Calendar.getInstance()
         val ano = calendario.get(Calendar.YEAR)
@@ -45,6 +45,10 @@ class Oberdan : DebugActivity() {
 
             val nextIntent = Intent(this, Professores::class.java)
             startActivity(nextIntent)
+        }
+        buttonConcluir.setOnClickListener {
+
+            Toast.makeText(this, "Avaliação salva com sucesso", Toast.LENGTH_LONG).show()
         }
 
     }
