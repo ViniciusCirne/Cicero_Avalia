@@ -34,7 +34,6 @@ class Oberdan : DebugActivity() {
 
         val dpd = DatePickerDialog(this, DatePickerDialog.OnDateSetListener { view, year, monthOfYear, dayOfMonth ->
 
-            // Display Selected date in textbox
             dateText.setText("" + dayOfMonth + " " + monthOfYear + ", " + year)
         }, ano, mes, dia)
 
