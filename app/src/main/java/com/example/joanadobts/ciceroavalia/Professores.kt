@@ -6,10 +6,11 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.logintest.DebugActivity
 //import com.example.logintest.DebugActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-class Professores : AppCompatActivity() {
+class Professores : DebugActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +31,9 @@ class Professores : AppCompatActivity() {
         }
 
     }
+
+    val args:Bundle? = intent?.extras
+    val nome:String? = args?.getString("usuario")
 }
 
 

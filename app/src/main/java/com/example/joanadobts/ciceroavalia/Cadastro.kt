@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.Toast
 import com.example.logintest.DebugActivity
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.cadastroo.*
 
 class Cadastro : DebugActivity() {
 
@@ -17,6 +18,8 @@ class Cadastro : DebugActivity() {
 
         var buttonSign = findViewById<Button>(R.id.button5)
         var voltarMenu = findViewById<Button>(R.id.button6)
+        var login = editText.text.toString()
+        var senha = editText2.text.toString()
 
         buttonSign.setOnClickListener {
 

@@ -1,174 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             xmlns:app="http://schemas.android.com/apk/res-auto"
-                                             xmlns:tools="http://schemas.android.com/tools"
-                                             android:layout_width="match_parent"
-                                             android:layout_height="match_parent">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" tools:srcCompat="@tools:sample/avatars"
             android:id="@+id/imageView3"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="164dp" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"/>
+            android:layout_width="155dp"
+            android:layout_height="164dp"
+            android:layout_marginTop="164dp"
+            android:layout_marginEnd="128dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars[15]" />
+
     <TextView
-            android:text="GESTÃO"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/textView20"
-            app:layout_constraintStart_toStartOf="@+id/imageView3"
-            android:layout_marginBottom="44dp"
-            app:layout_constraintBottom_toTopOf="@+id/imageView3" android:textSize="32sp" android:textStyle="bold"/>
+            android:layout_width="186dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="97dp"
+            android:layout_marginBottom="22dp"
+            android:text="GESTÃO"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/spinnerGestao"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-            android:text="RESOLUÇÃO DE PROBLEMAS"
+            android:id="@+id/textView21"
             android:layout_width="183dp"
-            android:layout_height="57dp"
-            android:id="@+id/textView21" android:textSize="20sp"
-            android:textStyle="bold" app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="36dp"
+            android:layout_height="0dp"
             android:layout_marginStart="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/textView23" android:textAlignment="center"/>
+            android:layout_marginBottom="36dp"
+            android:text="RESOLUÇÃO DE PROBLEMAS"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
     <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginBottom="37dp"
             android:text=" COMUNICAÇÃO"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView23" android:textSize="20sp"
-            android:textStyle="bold" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="32dp" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="236dp" android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView21"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
     <TextView
-            android:text="RECEPCIONALIDADE"
+            android:id="@+id/textView22"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView22" android:textSize="20sp"
-            android:textStyle="bold" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="16dp"
-            app:layout_constraintHorizontal_chainStyle="packed"
-            app:layout_constraintBaseline_toBaselineOf="@+id/checkBox43"
-            app:layout_constraintEnd_toStartOf="@+id/checkBox43" android:layout_marginEnd="8dp"
-    />
-    <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/checkBox38"
-            android:button="@android:drawable/btn_star_big_off"
-            app:layout_constraintBaseline_toBaselineOf="@+id/checkBox42" android:layout_marginEnd="28dp"
-            app:layout_constraintEnd_toEndOf="parent"/>
-    <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/checkBox42"
-            android:button="@android:drawable/btn_star_big_off" android:layout_marginTop="36dp"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox46" app:layout_constraintEnd_toStartOf="@+id/checkBox38"
-            android:layout_marginEnd="8dp"/>
-    <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/checkBox41"
-            android:button="@android:drawable/btn_star_big_off"
-            app:layout_constraintBaseline_toBaselineOf="@+id/checkBox42"
-            app:layout_constraintEnd_toStartOf="@+id/checkBox42"/>
-    <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/checkBox40"
-            android:button="@android:drawable/btn_star_big_off"
-            app:layout_constraintBaseline_toBaselineOf="@+id/checkBox41"
-            app:layout_constraintEnd_toStartOf="@+id/checkBox41"/>
-    <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/checkBox43"
-            android:button="@android:drawable/btn_star_big_off"
-            app:layout_constraintBaseline_toBaselineOf="@+id/checkBox45"
-            app:layout_constraintStart_toEndOf="@+id/textView22" app:layout_constraintEnd_toStartOf="@+id/checkBox45"/>
-    <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/checkBox44"
-            android:button="@android:drawable/btn_star_big_off" android:layout_marginTop="100dp"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3" app:layout_constraintStart_toEndOf="@+id/checkBox47"
-            app:layout_constraintEnd_toStartOf="@+id/checkBox46" android:layout_marginBottom="99dp"
-            app:layout_constraintBottom_toTopOf="@+id/textView21"/>
-    <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/checkBox48"
-            android:button="@android:drawable/btn_star_big_off"
-            app:layout_constraintBaseline_toBaselineOf="@+id/checkBox50"
-            app:layout_constraintEnd_toStartOf="@+id/checkBox50"/>
-    <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/checkBox49"
-            android:button="@android:drawable/btn_star_big_off" android:layout_marginTop="34dp"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox38" app:layout_constraintEnd_toStartOf="@+id/checkBox51"/>
-    <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/checkBox50"
-            android:button="@android:drawable/btn_star_big_off"
-            app:layout_constraintBaseline_toBaselineOf="@+id/checkBox52"
-            app:layout_constraintEnd_toStartOf="@+id/checkBox52"/>
-    <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/checkBox51"
-            android:button="@android:drawable/btn_star_big_off"
-            app:layout_constraintBaseline_toBaselineOf="@+id/checkBox49" android:layout_marginEnd="39dp"
-            app:layout_constraintEnd_toEndOf="parent"/>
-    <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/checkBox52"
-            android:button="@android:drawable/btn_star_big_off"
-            app:layout_constraintBaseline_toBaselineOf="@+id/checkBox49"
-            app:layout_constraintEnd_toStartOf="@+id/checkBox49"/>
-    <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/checkBox45"
-            android:button="@android:drawable/btn_star_big_off"
-            app:layout_constraintBaseline_toBaselineOf="@+id/checkBox47"
-            app:layout_constraintStart_toEndOf="@+id/checkBox43" app:layout_constraintEnd_toStartOf="@+id/checkBox47"/>
-    <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/checkBox46"
-            android:button="@android:drawable/btn_star_big_off"
-            app:layout_constraintBaseline_toBaselineOf="@+id/checkBox44"
-            app:layout_constraintStart_toEndOf="@+id/checkBox44" android:layout_marginEnd="23dp"
-            app:layout_constraintEnd_toEndOf="parent"/>
-    <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/checkBox47"
-            android:button="@android:drawable/btn_star_big_off"
-            app:layout_constraintBaseline_toBaselineOf="@+id/checkBox44"
-            app:layout_constraintStart_toEndOf="@+id/checkBox45" app:layout_constraintEnd_toStartOf="@+id/checkBox44"/>
-    <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/checkBox39"
-            android:button="@android:drawable/btn_star_big_off"
-            app:layout_constraintBaseline_toBaselineOf="@+id/checkBox40"
-            app:layout_constraintEnd_toStartOf="@+id/checkBox40"/>
+            android:layout_marginBottom="40dp"
+            android:text="RECEPCIONALIDADE"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView23"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerGestao" />
+
     <Spinner
-            android:layout_width="395dp"
+            android:id="@+id/spinnerGestao"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/spinnerGestao" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.176"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"/>
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="223dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
     <android.support.design.widget.TextInputLayout
-            android:layout_width="395dp"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="601dp"
-            tools:layout_editor_absoluteX="16dp">
+            android:id="@+id/textInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21">
 
         <android.support.design.widget.TextInputEditText
-                android:layout_width="356dp"
+                android:layout_width="399dp"
                 android:layout_height="wrap_content"
-                android:hint="Complemente sua avaliação aqui!"/>
+                android:hint="Complemente sua avaliação aqui!" />
     </android.support.design.widget.TextInputLayout>
+
+    <RatingBar
+            android:id="@+id/ratingBar5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="53dp"
+            android:layout_marginBottom="21dp"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            app:layout_constraintBottom_toTopOf="@+id/textView23"
+            app:layout_constraintStart_toStartOf="@+id/imageView3" />
+
+    <RatingBar
+            android:id="@+id/ratingBar6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            app:layout_constraintStart_toStartOf="@+id/ratingBar7"
+            app:layout_constraintTop_toTopOf="@+id/textView21" />
+
+    <RatingBar
+            android:id="@+id/ratingBar7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            app:layout_constraintStart_toStartOf="@+id/ratingBar5"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar5" />
+
+    <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="14dp"
+            android:text="CONCLUIR"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 </android.support.constraint.ConstraintLayout>

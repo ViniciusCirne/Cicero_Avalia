@@ -23,4 +23,7 @@ class Gestao : DebugActivity() {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinnerGestao.adapter = adapter
     }
+
+    val args:Bundle? = intent?.extras
+    val nome:String? = args?.getString("usuario")
 }

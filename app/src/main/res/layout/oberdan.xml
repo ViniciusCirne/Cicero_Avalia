@@ -23,22 +23,21 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/spinnerOberdan"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@tools:sample/avatars[8]" />
 
     <TextView
             android:id="@+id/textView9"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="13dp"
-            android:layout_marginBottom="13dp"
+            android:layout_width="185dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="1dp"
             android:text="RELACIONAMENTO"
             android:textAlignment="center"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
-            app:layout_constraintEnd_toEndOf="@+id/textView14"
-            app:layout_constraintStart_toStartOf="@+id/textView14"
-            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+            app:layout_constraintBottom_toBottomOf="@+id/ratingBar3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar4" />
 
     <Spinner
             android:id="@+id/spinnerOberdan"
@@ -53,47 +52,49 @@
     <TextView
             android:id="@+id/textView15"
             android:layout_width="0dp"
-            android:layout_height="41dp"
-            android:layout_marginBottom="221dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="14dp"
             android:text="ASSIMILAÇÃO"
             android:textAlignment="center"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/textView9"
-            app:layout_constraintStart_toStartOf="@+id/textView9" />
+            app:layout_constraintBottom_toTopOf="@+id/ratingBar3"
+            app:layout_constraintEnd_toStartOf="@+id/dateText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ratingBar4" />
 
     <TextView
             android:id="@+id/textView14"
             android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="15dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="47dp"
             android:text="DINAMICIDADE"
             android:textAlignment="center"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/textView15"
-            app:layout_constraintEnd_toEndOf="@+id/textView13"
-            app:layout_constraintStart_toStartOf="@+id/textView13"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+            app:layout_constraintBottom_toBottomOf="@+id/textView15"
+            app:layout_constraintEnd_toEndOf="@+id/textView15"
+            app:layout_constraintStart_toStartOf="@+id/textView15"
+            app:layout_constraintTop_toTopOf="@+id/textView13" />
 
     <TextView
             android:id="@+id/textView13"
             android:layout_width="0dp"
             android:layout_height="41dp"
-            android:layout_marginStart="13dp"
-            android:layout_marginTop="42dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="47dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="63dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="64dp"
             android:text="METODOLOGIA"
             android:textAlignment="center"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/textView14"
-            app:layout_constraintEnd_toStartOf="@+id/checkBox2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/dateText" />
+            app:layout_constraintBottom_toBottomOf="@+id/ratingBar2"
+            app:layout_constraintEnd_toEndOf="@+id/textView9"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toTopOf="@+id/pickCalendar" />
 
     <TextView
             android:id="@+id/textView12"
@@ -147,7 +148,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView15">
+            app:layout_constraintTop_toTopOf="@+id/ratingBar4">
 
         <android.support.design.widget.TextInputEditText
                 android:layout_width="match_parent"
@@ -156,45 +157,73 @@
                 android:textSize="14sp" />
     </android.support.design.widget.TextInputLayout>
 
-    <CheckBox
-            android:id="@+id/checkBox2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="161dp"
-            android:layout_marginBottom="65dp"
-            android:button="@android:drawable/star_big_off"
-            app:layout_constraintBottom_toTopOf="@+id/textView15"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView13" />
-
     <Button
             android:id="@+id/pickCalendar"
             android:layout_width="0dp"
             android:layout_height="36dp"
             android:layout_marginStart="9dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="36dp"
-            android:layout_marginBottom="18dp"
+            android:layout_marginTop="179dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="179dp"
             android:background="@android:drawable/screen_background_light_transparent"
             android:text="ESCOLHA A DATA"
-            app:layout_constraintBottom_toTopOf="@+id/textView13"
+            app:layout_constraintBottom_toTopOf="@+id/textView9"
             app:layout_constraintEnd_toStartOf="@+id/dateText"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toTopOf="@+id/imageView" />
 
     <TextView
             android:id="@+id/dateText"
             android:layout_width="0dp"
             android:layout_height="23dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="36dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="27dp"
             android:text="DATE"
             android:textAlignment="center"
             android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@+id/checkBox2"
+            app:layout_constraintBottom_toTopOf="@+id/textView13"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/pickCalendar"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="182dp"
+            android:layout_marginTop="66dp"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <RatingBar
+            android:id="@+id/ratingBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            app:layout_constraintStart_toStartOf="@+id/ratingBar"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+    <RatingBar
+            android:id="@+id/ratingBar3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
+            app:layout_constraintStart_toStartOf="@+id/ratingBar4" />
+
+    <RatingBar
+            android:id="@+id/ratingBar4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="46dp"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            app:layout_constraintStart_toStartOf="@+id/ratingBar2"
+            app:layout_constraintTop_toTopOf="@+id/ratingBar2" />
 </android.support.constraint.ConstraintLayout>
