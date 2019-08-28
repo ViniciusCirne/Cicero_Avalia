@@ -32,6 +32,14 @@ class Oberdan : DebugActivity() {
         val mes = calendario.get(Calendar.MONTH)
         val dia = calendario.get(Calendar.DAY_OF_MONTH)
 
+        val dpd = DatePickerDialog(this, DatePickerDialog.OnDateSetListener { view, year, monthOfYear, dayOfMonth ->
+
+            // Display Selected date in textbox
+            dateText.setText("" + dayOfMonth + " " + monthOfYear + ", " + year)
+        }, ano, mes, dia)
+
+        dpd.show()
+
 
         val adapter = ArrayAdapter( this, android.R.layout.simple_spinner_dropdown_item,
             nomes)
