@@ -1,7 +1,9 @@
 package com.example.logintest
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
+
 open class DebugActivity : AppCompatActivity()  {
     private val TAG = "TESTE_CICLO_VIDA_ACT"
     private val className :String

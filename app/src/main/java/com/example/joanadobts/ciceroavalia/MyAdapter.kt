@@ -1,8 +1,9 @@
 package com.example.joanadobts.ciceroavalia
-import android.support.v7.widget.RecyclerView
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.list_activity.view.*
 import kotlinx.android.synthetic.main.list_professores.view.*
 
@@ -31,6 +32,6 @@ class MyAdapter(var lista : MutableList<ProfessoresLista>) : RecyclerView.Adapte
         var nome = itemView.txtNome
         var materia = itemView.txtMateria
         var avatar = itemView.fotoProf
-        var listaView = itemView.rvLista
+        var listaView = itemView.rviewLista
     }
 }

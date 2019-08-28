@@ -1,12 +1,10 @@
 package com.example.joanadobts.ciceroavalia
 
-import android.support.v7.app.AppCompatActivity
+
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
-import com.example.joanadobts.ciceroavalia.MyAdapter
-import com.example.joanadobts.ciceroavalia.ProfessoresLista
-import com.example.joanadobts.ciceroavalia.R
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.list_activity.*
 
 class ListActivity : AppCompatActivity() {
@@ -70,8 +68,8 @@ class ListActivity : AppCompatActivity() {
         viewManager = LinearLayoutManager(this)
         viewAdapter = MyAdapter (lista)
 
-        rvLista.adapter = viewAdapter
-        rvLista.layoutManager = viewManager
+        rviewLista.adapter = viewAdapter
+        rviewLista.layoutManager = viewManager
 
     }
 
