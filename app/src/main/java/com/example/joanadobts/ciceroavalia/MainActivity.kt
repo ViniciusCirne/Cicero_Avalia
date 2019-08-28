@@ -17,6 +17,7 @@ class MainActivity : DebugActivity() {
         setContentView(R.layout.activity_main)
 
         var buttonLogin = findViewById<Button>(R.id.buttonEntrar)
+        var buttonCadastro = findViewById<Button>(R.id.buttonCadastrar)
         var tLogin = findViewById<EditText>(R.id.tLog)
         var tPassword = findViewById<EditText>(R.id.tPass)
 
@@ -38,6 +39,11 @@ class MainActivity : DebugActivity() {
                 Toast.makeText(this, "login e/ou senha incorretos", Toast.LENGTH_LONG).show()
             }
 
+        }
+        buttonCadastro.setOnClickListener{
+
+            val nextIntent = Intent(this, Cadastro::class.java)
+            startActivity(nextIntent)
         }
 
     }

@@ -10,10 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8eeb9fb-390e-401a-bc48-3ba2d7c9eb6e" name="Default Changelist" comment="Gestao Activity Update">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/Cadastro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/Cadastro.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/Oberdan.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/Oberdan.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/cadastroo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/cadastroo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/oberdan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/oberdan.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_bemvindo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_bemvindo.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,11 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/MainActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="93" />
+            <state relative-caret-position="568">
+              <caret line="44" column="50" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
               <folding>
                 <element signature="e#45#394#0" expanded="true" />
               </folding>
@@ -55,19 +53,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/Cadastro.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="92" />
+            <state relative-caret-position="323">
+              <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="27" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/ListActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-95">
+            <state relative-caret-position="119">
               <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -122,6 +130,12 @@
           <provider selected="true" editor-type-id="android-designer2" />
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_bemvindo.xml">
+          <provider editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="android-designer2" />
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -159,17 +173,17 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/ProfessoresLista.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/MyAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/list_professores.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/MainActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/ListActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/BemVindo.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_bemvindo.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/professores.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/Professores.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/cadastroo.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/Cadastro.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/oberdan.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/Oberdan.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_bemvindo.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/MainActivity.kt" />
       </list>
     </option>
   </component>
@@ -425,10 +439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_bemvindo.xml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_professores.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -454,24 +464,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/MainActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="93" />
-          <folding>
-            <element signature="e#45#394#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/cadastroo.xml">
       <provider editor-type-id="text-editor">
@@ -499,13 +491,6 @@
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/Cadastro.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="92" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/Oberdan.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -550,8 +535,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/ListActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
+        <state relative-caret-position="119">
           <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_bemvindo.xml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/Cadastro.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="27" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/joanadobts/ciceroavalia/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="44" column="50" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
+          <folding>
+            <element signature="e#45#394#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
