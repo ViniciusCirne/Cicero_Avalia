@@ -16,10 +16,16 @@ class Professores : AppCompatActivity() {
         setContentView(R.layout.professores)
 
         var buttonOberdan = findViewById<Button>(R.id.button27)
+        var buttonVoltar = findViewById<Button>(R.id.voltarProf)
 
         buttonOberdan.setOnClickListener {
 
             val nextIntent = Intent(this, Oberdan::class.java)
+            startActivity(nextIntent)
+        }
+        buttonVoltar.setOnClickListener {
+
+            val nextIntent = Intent(this, BemVindo::class.java)
             startActivity(nextIntent)
         }
 
