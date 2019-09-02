@@ -4,15 +4,16 @@ import android.annotation.TargetApi
 import android.app.DatePickerDialog
 import android.content.Intent
 import android.os.Build
-import android.support.v7.app.AppCompatActivity
+
 import android.os.Bundle
-import android.support.annotation.RequiresApi
+
 import android.widget.Button
 import android.widget.EditText
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import com.example.logintest.DebugActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.oberdan.*
