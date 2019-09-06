@@ -15,10 +15,19 @@
         </activity>
         <activity android:name="BemVindo">
         </activity>
+        <activity android:name="ListActivity">
+        </activity>
+        <activity android:name="Gestao">
+        </activity>
+        <activity android:name="MyAdapter">
+        </activity>
+        <activity android:name="Oberdan">
+        </activity>
+        <activity android:name="ProfessoresLista">
+        </activity>
         <activity android:name="MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
