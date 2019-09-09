@@ -15,19 +15,37 @@ class Professores : DebugActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.professores)
 
+        val nome:String? = args?.getString("nome")
+
+        val intent = Intent(this, TelaProfessores::class.java)
+
         var buttonOberdan = findViewById<Button>(R.id.button27)
+        var buttonCarneiro = findViewById<Button>(R.id.button24)
+        var buttonEdja=findViewById<Button>(R.id.button25)
+        var buttonHugo = findViewById<Button>(R.id.button26)
+        var buttonErick = findViewById<Button>(R.id.button28)
+
         var buttonVoltar = findViewById<Button>(R.id.voltarProf)
 
         buttonOberdan.setOnClickListener {
 
             val nextIntent = Intent(this, Oberdan::class.java)
             startActivity(nextIntent)
+
         }
         buttonVoltar.setOnClickListener {
 
             val nextIntent = Intent(this, BemVindo::class.java)
             startActivity(nextIntent)
         }
+
+        buttonCarneiro.setOnClickListener {
+
+            val nextIntent = Intent(this, Oberdan::class.java)
+            startActivity(nextIntent)
+            intent.putExtra("Carneiro", nome)
+        }
+
 
     }
 

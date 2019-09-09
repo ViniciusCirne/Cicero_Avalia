@@ -2,10 +2,12 @@ package com.example.joanadobts.ciceroavalia
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.example.logintest.DebugActivity
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : DebugActivity() {
@@ -18,7 +20,6 @@ class MainActivity : DebugActivity() {
         var buttonCadastro = findViewById<Button>(R.id.buttonCadastrar)
         var tLogin = findViewById<EditText>(R.id.tLog)
         var tPassword = findViewById<EditText>(R.id.tPass)
-
 
         buttonLogin.setOnClickListener {
 
@@ -43,6 +44,18 @@ class MainActivity : DebugActivity() {
             val nextIntent = Intent(this, Cadastro::class.java)
             startActivity(nextIntent)
         }
+
+        val db = FirebaseFirestore.getInstance()
+        val objeto = mapOf<String, Any>("usuario" to tLogin, "senha" to tPassword)
+        db.collection("usuarios").document().set(objeto).addOnSuccessListener {
+
+            Log.d("BANCODEDADOS", "Usuário gravado com sucesso")
+        }
+            .addOnFailureListener{
+
+                Log.d("BANCODEDADOS", "Houve uma falha em gravar o usuário")
+            }
+
 
     }
 }
