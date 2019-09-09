@@ -30,6 +30,7 @@ class Professores : DebugActivity() {
         buttonOberdan.setOnClickListener {
 
             val nextIntent = Intent(this, Oberdan::class.java)
+            nextIntent.putExtra("nome", "Oberdan")
             startActivity(nextIntent)
 
         }

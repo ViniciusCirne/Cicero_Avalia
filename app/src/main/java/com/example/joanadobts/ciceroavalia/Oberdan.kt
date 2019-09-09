@@ -32,7 +32,7 @@ class Oberdan : DebugActivity() {
         val ano = calendario.get(Calendar.YEAR)
         val mes = calendario.get(Calendar.MONTH)
         val dia = calendario.get(Calendar.DAY_OF_MONTH)
-
+val recuperaIntent = intent.getParcelableExtra<Professor>("nome")
         val dpd = DatePickerDialog(this, DatePickerDialog.OnDateSetListener { view, year, monthOfYear, dayOfMonth ->
 
             dateText.setText("" + dayOfMonth + " " + monthOfYear + ", " + year)
