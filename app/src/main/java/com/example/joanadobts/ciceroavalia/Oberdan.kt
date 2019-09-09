@@ -40,6 +40,7 @@ class Oberdan : DebugActivity() {
 
         dpd.show()
 
+        val int = ratingBar.getNumStars()
 
         val adapter = ArrayAdapter( this, android.R.layout.simple_spinner_dropdown_item,
             nomes)
@@ -60,6 +61,7 @@ class Oberdan : DebugActivity() {
         }
 
     }
+
 
 
 

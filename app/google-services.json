@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "824926537723",
+    "firebase_url": "https://cicero-avalia.firebaseio.com",
+    "project_id": "cicero-avalia",
+    "storage_bucket": "cicero-avalia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824926537723:android:3b591e7e716ecc8348ed5e",
+        "android_client_info": {
+          "package_name": "com.example.joanadobts.ciceroavalia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "824926537723-j5jt1g3te21qaqvp1otqqrjlhm5bjnh0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.joanadobts.ciceroavalia",
+            "certificate_hash": "cad9aeaaf047a336e84713204a201401a63a9c98"
+          }
+        },
+        {
+          "client_id": "824926537723-7motohca7hkbtbsq8l5seqj7q0drml1p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdjmk0V98Cpqx_w2cX96SA2DDQSdUBfqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "824926537723-7motohca7hkbtbsq8l5seqj7q0drml1p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
