@@ -17,7 +17,7 @@ class Professores : DebugActivity() {
 
         val nome:String? = args?.getString("nome")
 
-        val intent = Intent(this, TelaProfessores::class.java)
+        val intent = Intent(this, Oberdan::class.java)
 
         var buttonOberdan = findViewById<Button>(R.id.button27)
         var buttonCarneiro = findViewById<Button>(R.id.button24)
