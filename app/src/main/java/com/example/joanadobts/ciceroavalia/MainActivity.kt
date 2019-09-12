@@ -21,15 +21,24 @@ class MainActivity : DebugActivity() {
         var tLogin = findViewById<EditText>(R.id.tLog)
         var tPassword = findViewById<EditText>(R.id.tPass)
 
+        var login = tLogin.text.toString()
+        var senha = tPassword.text.toString()
+
         buttonLogin.setOnClickListener {
 
-            var login = tLogin.text.toString()
-            var senha = tPassword.text.toString()
+          //  var login = tLogin.text.toString()
+           // var senha = tPassword.text.toString()
+
+            login = tLogin.text.toString()
+            senha = tPassword.text.toString()
+
 
             if (login.toLowerCase() == "denilson" && senha == "nave19") {
 
                 val intent = Intent(this, BemVindo::class.java)
                 val params = Bundle()
+                Log.d("BANCODEDADOS", "3")
+
                 params.putString("usuario", login)
                 intent.putExtras(params)
                 startActivity(intent)
@@ -45,16 +54,16 @@ class MainActivity : DebugActivity() {
             startActivity(nextIntent)
         }
 
-        val db = FirebaseFirestore.getInstance()
-        val objeto = mapOf<String, Any>("usuario" to tLogin, "senha" to tPassword)
-        db.collection("usuarios").document().set(objeto).addOnSuccessListener {
+       // val db = FirebaseFirestore.getInstance()
+        //val objeto = mapOf<String, Any>("usuario" to login, "senha" to senha)
+       // db.collection("usuarios").document().set(objeto).addOnSuccessListener {
 
-            Log.d("BANCODEDADOS", "Usuário gravado com sucesso")
-        }
-            .addOnFailureListener{
+        //    Log.d("BANCODEDADOS", "Usuário gravado com sucesso")
+       // }
+        //    .addOnFailureListener{
 
-                Log.d("BANCODEDADOS", "Houve uma falha em gravar o usuário")
-            }
+        //        Log.d("BANCODEDADOS", "Houve uma falha em gravar o usuário")
+       //     }
 
 
     }

@@ -76,12 +76,13 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@android:drawable/ic_menu_my_calendar" />
 
-    <com.google.android.material.textfield.TextInputEditText
+    <EditText
             android:id="@+id/tLog"
             android:layout_width="352dp"
             android:layout_height="61dp"
             android:layout_marginEnd="56dp"
-            android:hint="  Usuário"
+            android:hint="Usuário"
+            android:inputType="text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
