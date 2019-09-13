@@ -54,16 +54,16 @@ class MainActivity : DebugActivity() {
             startActivity(nextIntent)
         }
 
-       // val db = FirebaseFirestore.getInstance()
-        //val objeto = mapOf<String, Any>("usuario" to login, "senha" to senha)
-       // db.collection("usuarios").document().set(objeto).addOnSuccessListener {
+       val db = FirebaseFirestore.getInstance()
+        val objeto = mapOf<String, Any>("usuario" to login, "senha" to senha)
+       db.collection("usuarios").document().set(objeto).addOnSuccessListener {
 
-        //    Log.d("BANCODEDADOS", "Usuário gravado com sucesso")
-       // }
-        //    .addOnFailureListener{
+            Log.d("BANCODEDADOS", "Usuário gravado com sucesso")
+        }
+            .addOnFailureListener{
 
-        //        Log.d("BANCODEDADOS", "Houve uma falha em gravar o usuário")
-       //     }
+                Log.d("BANCODEDADOS", "Houve uma falha em gravar o usuário")
+            }
 
 
     }

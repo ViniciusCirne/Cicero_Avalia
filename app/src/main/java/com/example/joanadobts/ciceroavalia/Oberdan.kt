@@ -11,8 +11,10 @@ import android.view.View
 import android.widget.*
 import androidx.annotation.RequiresApi
 import com.example.logintest.DebugActivity
+import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.oberdan.*
 import java.util.*
@@ -27,11 +29,17 @@ class Oberdan : DebugActivity() {
         var buttonConcluir = findViewById<Button>(R.id.ratingDone)
         val nomes = arrayOf("LP", "CJD", "PI1", "PAD1", "PAD2")
 
-        lateinit var avaliacaoText: TextInputLayout
+        lateinit var avaliacaoText: EditText
         lateinit var ratingBar1: RatingBar
         lateinit var ratingBar2: RatingBar
         lateinit var ratingBar3: RatingBar
         lateinit var ratingBar4: RatingBar
+
+        val metodologia = findViewById<RatingBar>(R.id.ratingBar)
+        val dinamicidade = findViewById<RatingBar>(R.id.ratingBar2)
+        val assimilacao = findViewById<RatingBar>(R.id.ratingBar4)
+        val relacionamento = findViewById<RatingBar>(R.id.ratingBar3)
+        val avaliacao = findViewById<EditText>(R.id.textInputEditText)
 
         val calendario = Calendar.getInstance()
         val ano = calendario.get(Calendar.YEAR)
@@ -45,7 +53,6 @@ class Oberdan : DebugActivity() {
 
         dpd.show()
 
-        val int = ratingBar.getNumStars()
 
         val adapter = ArrayAdapter( this, android.R.layout.simple_spinner_dropdown_item,
             nomes)
@@ -62,19 +69,18 @@ class Oberdan : DebugActivity() {
         }
         buttonConcluir.setOnClickListener {
 
-            saveAvaliacao()
+            val db = FirebaseFirestore.getInstance()
+            val objeto = mapOf<String,  Any>("metodologia" to metodologia.numStars, "dinamicidade" to dinamicidade.numStars, "assimilacao" to assimilacao.numStars,  "relacionamento" to relacionamento.numStars, "avaliacao" to avaliacao)
+            db.collection("avaliacoes").document("textos").set(objeto)
             Toast.makeText(this, "Avaliação salva com sucesso", Toast.LENGTH_LONG).show()
         }
 
-        avaliacaoText = findViewById(R.id.textInputEditText)
-        ratingBar1 = findViewById(R.id.ratingBar)
-        ratingBar2 = findViewById(R.id.ratingBar2)
-        ratingBar3 = findViewById(R.id.ratingBar3)
-        ratingBar4 = findViewById(R.id.ratingBar4)
 
     }
 
-    private fun saveAvaliacao(){
+
+
+    /*private fun saveAvaliacao(){
 
         val avaliacao = textInputEditText.text.toString().trim()
 
@@ -89,12 +95,12 @@ class Oberdan : DebugActivity() {
         val ava = ProfessorAttributes(avaliacao, ratingBar.numStars, avaliacaoidenti)
         ref.child(avaliacaoidenti).setValue(ava).addOnCompleteListener{
             Toast.makeText(applicationContext, "Avaliacao salva com sucesso", Toast.LENGTH_LONG).show()
-        }
+        }*/
 
     }
 
 
-}
+
 
 
 
